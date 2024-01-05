@@ -73,4 +73,15 @@ class ApiClient extends GetConnect {
     http.Response response = await http.get(url, headers: headers);
     return response;
   }
+
+  //wallet
+  Future<http.Response> topUpAmount(int amount, String description) async {
+    var url = Uri.parse(
+        '${AppUrl.topUpAmountEndPoint}?amount=$amount&orderInfo=$description');
+
+    headers["cookie"] = await CookieUtil.getCookie();
+    http.Response response = await http.post(url, headers: headers);
+
+    return response;
+  }
 }

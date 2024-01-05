@@ -37,7 +37,7 @@ class ItemsPage extends GetWidget<ServicesController> {
                               ? 'msg_service_not_found'.tr
                               : "msg_tribute_not_found".tr,
                           overflow: TextOverflow.ellipsis,
-                          style: CustomTextStyles.titleMediumBlue50018),
+                          style: CustomTextStyles.titleMedium18Blue500),
                     )
                   ],
                 );
@@ -59,7 +59,7 @@ class ItemsPage extends GetWidget<ServicesController> {
                       padding: const EdgeInsets.only(top: 10),
                       child: Text("msg_tribute_not_found".tr,
                           overflow: TextOverflow.ellipsis,
-                          style: CustomTextStyles.titleMediumBlue50018),
+                          style: CustomTextStyles.titleMedium18Blue500),
                     )
                   ],
                 );

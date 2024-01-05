@@ -68,7 +68,7 @@ class ItemCard extends GetWidget<ServicesController> {
                   children: [
                     Text(
                         item.name,
-                        style: CustomTextStyles.titleMediumBlue50018,
+                        style: CustomTextStyles.titleMedium18Blue500,
                         maxLines: 1),
                     const SizedBox(height: 5),
                     Row(

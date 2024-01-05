@@ -15,4 +15,8 @@ class AppUrl {
 
   // profile Screen
   static const String getProfileByIDEndPoint = "$baseUrl/account/getProfile/";
+
+  // wallet screen
+  static const String topUpAmountEndPoint = "$baseUrl/order/topUp";
+
 }

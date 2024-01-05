@@ -46,6 +46,10 @@ class CustomTextStyles {
         color: appTheme.gray900,
         fontSize: 16.fSize,
       );
+  static get titleLarge16Blue500 => theme.textTheme.titleMedium!.copyWith(
+        color: appTheme.blue500,
+        fontSize: 16.fSize,
+      );
 
   //600
   static get titleLarge18Gray900 => theme.textTheme.titleMedium!.copyWith(
@@ -63,7 +67,7 @@ class CustomTextStyles {
         fontSize: 18.fSize,
       );
 
-  static get titleMediumBlue50018 => theme.textTheme.titleMedium!.copyWith(
+  static get titleMedium18Blue500 => theme.textTheme.titleMedium!.copyWith(
         color: appTheme.blue500,
         fontSize: 18.fSize,
       );

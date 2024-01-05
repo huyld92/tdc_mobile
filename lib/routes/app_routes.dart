@@ -1,4 +1,7 @@
 import 'package:get/get.dart';
+import 'package:tdc_mobile/presentation/grave_details_screen/binding/grave_details_binding.dart';
+import 'package:tdc_mobile/presentation/grave_details_screen/grave_details_screen.dart';
+import 'package:tdc_mobile/presentation/register_plot_screen/register_plot_screen.dart';
 import '../presentation/cart_screen/binding/cart_binding.dart';
 import '../presentation/cart_screen/cart_screen.dart';
 import '../presentation/forgot_password_screen/binding/forgot_password_binding.dart';
@@ -17,6 +20,7 @@ import '../presentation/plot_screen/binding/plot_binding.dart';
 import '../presentation/plot_screen/plot_screen.dart';
 import '../presentation/profile_screen/binding/home_binding.dart';
 import '../presentation/profile_screen/profile_screen.dart';
+import '../presentation/register_plot_screen/binding/register_plot_binding.dart';
 import '../presentation/register_screen/binding/register_binding.dart';
 import '../presentation/register_screen/register_screen.dart';
 import '../presentation/search_screen/binding/search_binding.dart';
@@ -39,6 +43,8 @@ class AppRoutes {
 
   static const String forgotPasswordScreen = '/forgot_password_screen';
 
+  static const String graveDetailsScreen = '/grave_details_screen';
+
   static const String mainWrapper = '/main_wrapper';
 
   static const String mapScreen = '/map_screen';
@@ -57,12 +63,14 @@ class AppRoutes {
 
   static const String profileScreen = '/profile_screen';
 
+  static const String registerPlotScreen = '/register_plot_screen';
+
   static const String registerScreen = '/register_screen';
 
   static const String walletScreen = '/wallet_screen';
 
   // static const String initialRoute = '/initialRoute';
-  static const String initialRoute = homeScreen;
+  static const String initialRoute = searchScreen;
 
   static List<GetPage> pages = [
     GetPage(
@@ -77,6 +85,13 @@ class AppRoutes {
       page: () => ForgotPasswordScreen(),
       bindings: [
         ForgotPasswordBinding(),
+      ],
+    ),
+    GetPage(
+      name: graveDetailsScreen,
+      page: () => GraveDetailsScreen(),
+      bindings: [
+        GraveDetailsBinding(),
       ],
     ),
     GetPage(
@@ -136,6 +151,12 @@ class AppRoutes {
       ],
     ),
     GetPage(
+      name: registerPlotScreen,
+      page: () => RegisterPlotScreen(),
+      bindings: [
+        RegisterPlotBinding(),
+      ],
+    ),    GetPage(
       name: registerScreen,
       page: () => RegisterScreen(),
       bindings: [

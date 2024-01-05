@@ -65,9 +65,12 @@ class MapController extends GetxController {
     // ]);
   }
 
-  void viewPlots() {
-    Get.toNamed(AppRoutes.plotScreen);
+  void viewPlots(int index) {
+    var state = data[index]. state;
+    Get.toNamed(AppRoutes.plotScreen, arguments: state);
   }
+
+  void getBack() {Get.back();}
 }
 
 /// Collection of Australia state code data.

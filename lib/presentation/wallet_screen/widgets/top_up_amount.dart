@@ -61,13 +61,13 @@ class TopUpWidget extends StatelessWidget {
                       maxLengthEnforcement:
                           MaxLengthEnforcement.truncateAfterCompositionEnds,
                       decoration: InputDecoration(
-                          hintText: '0',
+                          hintText: controller.amount.value.toString(),
                           border: InputBorder.none,
                           hintStyle:
                               CustomTextStyles.headlineLarge20BlueGray700),
                       style: CustomTextStyles.headlineLarge20BlueGray700,
                       onChanged: (text) {
-                        double amount = double.tryParse(text) ?? 0.0;
+                        int amount = int.tryParse(text) ?? 0;
                         controller.amount.value = amount;
                         if (text.isEmpty) {
                           controller.isTextFieldEmpty.value = true;

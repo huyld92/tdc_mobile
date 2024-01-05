@@ -120,15 +120,15 @@ class ProfileScreen extends GetWidget<ProfileController> {
       leadingWidth: 40,
       leading: CustomImageView(
           imagePath: ImageConstant.imgBack,
-          height: 40.adaptSize,
-          width: 40.adaptSize,
+          height: 24.adaptSize,
+          width: 24.adaptSize,
           margin: const EdgeInsets.only(left: 16, top: 13, bottom: 17),
           onTap: () {
             controller.getBack();
           }),
       centerTitle: true,
       title: AppbarTitle(
-        text: "lbl_profile".tr,
+        text: "lbl_shopping_cart".tr,
       ),
     );
   }

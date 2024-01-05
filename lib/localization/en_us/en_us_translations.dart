@@ -59,6 +59,25 @@ final Map<String, String> enUs = {
   "lbl_current_balance": "Current balance:",
   "lbl_next": "Next",
 
+  // Grave details screen
+  "lbl_full_name": "Full name",
+  "lbl_year_born": "Year born",
+  "lbl_year_died": "Year died",
+  "lbl_people_found": "People Found",
+
+
+
+  // Grave details screen
+  "lbl_grave": "Grave",
+  "lbl_birth": "Birth",
+  "lbl_death": "Death",
+  "lbl_size_of_grave": "Size of grave",
+  "lbl_grave_type": "Grave type",
+  "lbl_location": "Location",
+  // "lbl_": "",
+
+
+
   // notification
   "lbl_add_to_cart": "Add to cart",
   "lbl_add": "Add [",
